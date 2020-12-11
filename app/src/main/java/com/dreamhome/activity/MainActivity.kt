@@ -1,15 +1,18 @@
-package com.dreamhome
+package com.dreamhome.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.FrameLayout
 import android.widget.Toast
-import android.widget.Toolbar
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
+import com.dreamhome.fragment.About
+import com.dreamhome.fragment.DashBoard
+import com.dreamhome.fragment.Favourite
+import com.dreamhome.R
 import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -57,13 +60,19 @@ class MainActivity : AppCompatActivity() {
                     drawerLayout.closeDrawers()
                 }
                 R.id.fav -> {
-                    supportFragmentManager.beginTransaction().replace(R.id.fragment, Favourite())
+                    supportFragmentManager.beginTransaction().replace(
+                        R.id.fragment,
+                        Favourite()
+                    )
                         .commit()
                     supportActionBar?.title = "Favourite"
                     drawerLayout.closeDrawers()
                 }
                 R.id.about -> {
-                    supportFragmentManager.beginTransaction().replace(R.id.fragment, About())
+                    supportFragmentManager.beginTransaction().replace(
+                        R.id.fragment,
+                        About()
+                    )
                         .commit()
                     supportActionBar?.title = "About"
                     drawerLayout.closeDrawers()
@@ -94,7 +103,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun openDashboard(){
-        supportFragmentManager.beginTransaction().replace(R.id.fragment, DashBoard())
+        supportFragmentManager.beginTransaction().replace(
+            R.id.fragment,
+            DashBoard()
+        )
             .commit()
         supportActionBar?.title = "Home"
         drawerLayout.closeDrawers()
@@ -106,7 +118,7 @@ class MainActivity : AppCompatActivity() {
 
         val frag=supportFragmentManager.findFragmentById(R.id.fragment)
         when(frag){
-            !is DashBoard->openDashboard()
+            !is DashBoard ->openDashboard()
             else->super.onBackPressed()
         }
     }

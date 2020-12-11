@@ -16,7 +16,7 @@
         android:id="@+id/logoName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/dream_home"
+        android:text="D R E A M   H O M E"
         android:textSize="24sp"
         android:textColor="@color/textColor"
         android:layout_below="@+id/logo"
@@ -27,7 +27,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/see_your_future_dream"
-        android:textSize="24sp"
+        android:textStyle="italic"
+        android:textSize="20sp"
         android:textColor="@color/textColor"
         android:layout_below="@+id/logoName"
         android:layout_centerHorizontal="true"/>
