@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="164dp"
+        android:src="@drawable/logo"
+       android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        />
+    <TextView
+        android:id="@+id/logoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dream_home"
+        android:textSize="24sp"
+        android:textColor="@color/textColor"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/logoLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/see_your_future_dream"
+        android:textSize="24sp"
+        android:textColor="@color/textColor"
+        android:layout_below="@+id/logoName"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#4E99B0"
+        android:layout_alignParentBottom="true"/>
+
+
+
+</RelativeLayout>

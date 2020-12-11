@@ -1,0 +1,2 @@
+rootProject.name='DreamHome'
+include ':app'
