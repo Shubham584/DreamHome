@@ -11,6 +11,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+
         <ImageView
             android:layout_width="190dp"
             android:layout_height="160dp"
@@ -61,20 +62,20 @@
             android:textSize="24dp" />
 
         <TextView
+            android:id="@+id/txtForgotPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="Forgot Password?"
-            android:id="@+id/txtForgotPassword"
             android:textColor="#4A4A4A"
             android:textSize="24dp" />
 
         <TextView
+            android:id="@+id/txtNotRegistered"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:id="@+id/txtNotRegistered"
             android:text="Not Registered?Click Here"
             android:textColor="@color/color3"
             android:textSize="24dp" />
